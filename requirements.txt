@@ -1,0 +1,59 @@
+# -------------------------------
+# Core numerical and vision tools
+# -------------------------------
+
+# Computer vision library
+# Used to read video, extract frames, resize images, and save outputs
+opencv-python==4.9.0.80
+
+# Numerical computation library
+# Used for matrix operations, density map handling, and calculations
+numpy==1.26.4
+
+# Scientific utilities
+# Used for smoothing density maps and numerical operations
+scipy==1.11.4
+
+# ---------------------------------
+# Deep Learning Framework
+# ---------------------------------
+
+# Core deep learning engine
+# Required to load and run pre-trained crowd density and face models
+torch==2.1.2
+
+# Vision helpers for PyTorch
+# Used for image normalization and tensor conversions
+torchvision==0.16.2
+
+# ---------------------------------
+# Crowd Density Estimation
+# ---------------------------------
+
+# PyTorch utilities and model hub access
+# Used to load pre-trained density estimation models (CSRNet / MCNN)
+timm==0.9.12
+
+# ---------------------------------
+# Face Recognition (On-Demand Only)
+# ---------------------------------
+
+# Face detection and recognition framework
+# Used to find and match the missing child's face when required
+insightface==0.7.3
+
+# High-performance inference backend
+# Speeds up face recognition on CPU-only systems
+onnxruntime==1.16.3
+
+# ---------------------------------
+# Utilities
+# ---------------------------------
+
+# Progress bar for long-running video loops
+# Helps understand processing time during execution
+tqdm==4.66.1
+
+# Visualization library
+# Used to visualize density heatmaps for debugging and explanation
+matplotlib==3.8.2
