@@ -1,59 +1,40 @@
-# -------------------------------
-# Core numerical and vision tools
-# -------------------------------
+# ======================================
+# Crowd Detection & Risk Analysis ONLY
+# (Face recognition handled by teammate)
+# ======================================
 
 # Computer vision library
-# Used to read video, extract frames, resize images, and save outputs
+# Used to read video files, extract frames, resize images, and draw heatmaps
 opencv-python==4.9.0.80
 
 # Numerical computation library
-# Used for matrix operations, density map handling, and calculations
+# Used for density maps, grid calculations, and crowd statistics
 numpy==1.26.4
 
 # Scientific utilities
-# Used for smoothing density maps and numerical operations
+# Used for smoothing heatmaps and basic signal processing
 scipy==1.11.4
 
-# ---------------------------------
-# Deep Learning Framework
-# ---------------------------------
-
-# Core deep learning engine
-# Required to load and run pre-trained crowd density and face models
+# Deep learning framework
+# Required to load and run pre-trained crowd models
 torch==2.1.2
 
-# Vision helpers for PyTorch
-# Used for image normalization and tensor conversions
+# PyTorch vision utilities
+# Used for image normalization and tensor conversion
 torchvision==0.16.2
 
-# ---------------------------------
-# Crowd Density Estimation
-# ---------------------------------
-
-# PyTorch utilities and model hub access
-# Used to load pre-trained density estimation models (CSRNet / MCNN)
+# Model library access
+# Used to load lightweight pre-trained segmentation / crowd models
 timm==0.9.12
 
-# ---------------------------------
-# Face Recognition (On-Demand Only)
-# ---------------------------------
+# YOLO framework (secondary verification only)
+# Used for optional person detection in high-risk zones
+ultralytics==8.1.2
 
-# Face detection and recognition framework
-# Used to find and match the missing child's face when required
-insightface==0.7.3
-
-# High-performance inference backend
-# Speeds up face recognition on CPU-only systems
-onnxruntime==1.16.3
-
-# ---------------------------------
-# Utilities
-# ---------------------------------
-
-# Progress bar for long-running video loops
-# Helps understand processing time during execution
+# Progress visualization
+# Shows progress while processing long videos
 tqdm==4.66.1
 
 # Visualization library
-# Used to visualize density heatmaps for debugging and explanation
+# Used to generate and save crowd heatmaps
 matplotlib==3.8.2
